@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>carritoServlet</servlet-name>
+        <servlet-class>servlets.carritoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>loginServlet2</servlet-name>
+        <servlet-class>servlets.loginServlet2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>listaUsuarioServlet</servlet-name>
+        <servlet-class>servlets.listaUsuarioServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SendMail</servlet-name>
+        <servlet-class>servlets.SendMail</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>reporteServlet</servlet-name>
+        <servlet-class>servlets.reporteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>carritoServlet</servlet-name>
+        <url-pattern>/carritoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginServlet2</servlet-name>
+        <url-pattern>/loginServlet2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>listaUsuarioServlet</servlet-name>
+        <url-pattern>/listaUsuarioServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendMail</servlet-name>
+        <url-pattern>/SendMail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>reporteServlet</servlet-name>
+        <url-pattern>/reporteServlet</url-pattern>
+    </servlet-mapping>
+    
+
+
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
